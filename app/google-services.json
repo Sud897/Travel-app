@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569346368701",
+    "project_id": "travelmania-latest",
+    "storage_bucket": "travelmania-latest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569346368701:android:baf13562d52e6d3f9a83d4",
+        "android_client_info": {
+          "package_name": "com.example.travelmania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569346368701-47r1bsb6m6cqi9d2g26gubp4gv4498lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARGG_20A70Xfbjtti6ktsCN26bmOw32B0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569346368701-47r1bsb6m6cqi9d2g26gubp4gv4498lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

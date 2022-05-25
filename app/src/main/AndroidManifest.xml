@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelmania">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TravelMania"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".VaccinationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar"/>
+        <activity
+            android:name=".ExploringActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".BookMussoorieActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".BookGoaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".BookLadakhActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".BookKedarnathActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".DestinationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".PaymentGateWayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Gangtok_book_Activity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".DrawerHomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_drawe_home"
+            android:theme="@style/Theme.TravelMania.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TravelMania.NoAppBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

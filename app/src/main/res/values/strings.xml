@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TravelMania</string>
+    <string name="title_activity_drawe_home">DraweHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="welcome_back">Welcome Back To TravelMania</string>
+    <string name="password">Password</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_forget_pwd">Forget Password ?</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_mobile">Mobile</string>
+    <string name="txt_confirm_password">Confirm Password</string>
+    <string name="txt_google">Google</string>
+    <string name="txt_facebook">Facebook</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_notifications">Notifications</string>
+    <string name="txt_settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_log_out">Log Out</string>
+    <string name="my_trip">My Trip</string>
+    <string name="dob_txt">Date Of Birth</string>
+    <string name="gender_txt">Gender</string>
+    <string name="passport_txt">Passport No.</string>
+    <string name="state_txt">State</string>
+    <string name="district_txt">District</string>
+    <string name="pin_code">Pin Code</string>
+</resources>

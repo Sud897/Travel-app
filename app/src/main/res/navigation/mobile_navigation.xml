@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.travelmania.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_my_trip"
+        android:name="com.example.travelmania.ui.MyTripFragment"
+        android:label="@string/my_trip"
+        tools:layout="@layout/fragment_my_trip" />
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.travelmania.ui.NotificationsFragment"
+        android:label="@string/txt_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.travelmania.ui.SettingsFragment"
+        android:label="@string/txt_settings"
+        tools:layout="@layout/fragment_settings"/>
+
+    <dialog
+        android:id="@+id/nav_logout"
+        android:name="com.example.travelmania.ui.LogoutFragment"
+        android:label="@string/txt_logout"
+        tools:layout="@layout/fragment_logout"/>
+</navigation>

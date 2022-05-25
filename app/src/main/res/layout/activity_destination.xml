@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestinationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/lightSteel_blue">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/destination_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_marginVertical="8dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    android:hint="Choose your Destination"
+                    android:textColorHint="@color/Secondary_dark_blue"
+                    app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+                    app:startIconTint="@color/Secondary_dark_blue">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/destination"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/andaman_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Andaman_card2"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/andaman_nicobar2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_alignBottom="@id/item_image1"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_andaman2"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Andaman\nPremium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/andaman_explore2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_andaman2"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹22,999"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/duration0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost7"
+                            android:background="@drawable/shape_txtview"
+                            android:text="9N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uttarakhand_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kedarnath_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/kedarnath" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image0"
+                        android:background="@color/white">
+                        <TextView
+                            android:id="@+id/txt_kedarnath"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kedarnath"
+                            android:textColor="@color/black"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <Button
+                            android:id="@+id/kedarnath_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_kedarnath"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹22,999"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/duration1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost1"
+                            android:background="@drawable/shape_txtview"
+                            android:text="9N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uttarakhand_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Nainital_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nainital1" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image2"
+                        android:background="@color/white">
+                        <TextView
+                            android:id="@+id/txt_nainital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nainital"
+                            android:textColor="@color/black"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <Button
+                            android:id="@+id/nainital_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_nainital"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹16,999"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/duration2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost2"
+                            android:background="@drawable/shape_txtview"
+                            android:text="7N/8D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uttarakhand_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mussoorie_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/mussoorie" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image4"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_mussoorie"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Mussoorie"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/mussoorie_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_mussoorie"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹21,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/duration5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost5"
+                            android:background="@drawable/shape_txtview"
+                            android:text="9N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/andaman_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Andaman_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/andaman_nicobar3" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image5"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_andaman"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Andaman and\nNicobar"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/andaman_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_andaman"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹42,999"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/duration4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost4"
+                            android:background="@drawable/shape_txtview"
+                            android:text="12N/13D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goa_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goa_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/goa2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image3"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_goa"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Goa"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/goa_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/cost6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_goa"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹39,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/duration6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/cost6"
+                            android:background="@drawable/shape_txtview"
+                            android:text="10N/11D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goa_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goa_card2"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_goa"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/goa5" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_goa"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_goa2"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Goa Premium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/goa_explore2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/goacost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_goa2"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹45,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/goaduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/goacost2"
+                            android:background="@drawable/shape_txtview"
+                            android:text="12N/13D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/manali_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/manali_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_manali"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/manali" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_manali"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_manali"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Summer At\nManali"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/manali_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/manalicost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_manali"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹20,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/manaliduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/manalicost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="7N/8D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shimla_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shimla_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_shimla"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/shimla1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_shimla"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_shimla"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Vaccation in\nShimla"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/shimla_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/shimlacost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_shimla"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹25,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/simladuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/shimlacost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="8N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arunachal_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/arunachal_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_arunachal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/arunachal2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_arunachal"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_arunachal"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Arunachal\nPradesh"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/arunachal_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/arunachalcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_arunachal"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹25,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/arunachalduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/arunachalcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="8N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shilong_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shilong_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_shilong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/shilong" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_shilong"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_shilong"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Vaccation in\nShilong"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/shilong_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/shilongcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_shilong"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹25,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/shilongduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/shilongcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="8N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lajong_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lajong_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:elevation="50dp"
+                android:layout_marginBottom="20dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_lajong"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/shimla1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_lajong"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_lajong"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Trip to\nLajong"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/lajong_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/lajongcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_lajong"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹25,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/lajongduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/lajongcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="8N/10D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gangtok_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gangtok_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gangtok" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_image"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_gangtok"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Gangtok"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/gangtok_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/gangtokcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_gangtok"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/gangtokduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/gangtokcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rajasthan_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rajasthan_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_rajasthan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rajasthan2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_rajasthan"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_rajasthan"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Rajasthan"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/rajasthan_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/rajasthancost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_rajasthan"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹16,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/rajasthanduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/rajasthancost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/jodhpur_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jodhpur_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_jodhpur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rajasthan" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_jodhpur"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_jodhpur"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="7 Night at\nJodhpur"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/jodhpur_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/jodhpurcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_jodhpur"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹12,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/jodhpurduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/jodhpurcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="7N/8D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/jammu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jammu_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_jammu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/jammu1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_jammu"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_jammu"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Nature at\nJammu"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/jammu_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/jammucost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_jammu"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/jammuduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/jammucost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kashmir_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kashmir_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_kashmir"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/kashmir3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_kashmir"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_kashmir"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Heaven at\nKashmir"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/kashmir_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/kashmircost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_kashmir"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/kashmirduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/kashmircost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/karnataka_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/karnataka_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_karnataka"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/karnataka" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_karnataka"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_karnataka"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Ooty"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/karnataka_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/karnatakacost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_karnataka"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/karnatakaduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/karnatakacost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kerala_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kerala_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_kerala"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/kerala3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_kerala"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_kerala"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Kerala"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/kerala_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/keralacost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_kerala"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/keraladuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/keralacost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/leh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/leh_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_leh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/leh" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_leh"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_leh"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Leh and Ladakh"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/leh_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/lehcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_leh"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/lehduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/lehcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ladakh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ladakh_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_ladakh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ladakh3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_ladakh"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_ladakh"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Summer at\nLadakh"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/ladakh_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/ladakhcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_ladakh"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹15,999"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/ladakhduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/ladakhcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="6N/7D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lakshdweep_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lakshdweep_card"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="50dp"
+                app:cardMaxElevation="0dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/item_lakshdweep"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lakshadweep" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@id/item_lakshdweep"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/txt_lakshdweep"
+                            style="@style/TextAppearance.MaterialComponents.Headline6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Lakshdweep"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/lakshdweep_explore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/shape_btn_logout"
+                            android:foreground="?attr/selectableItemBackground"
+                            android:text="Explore" />
+
+                        <TextView
+                            android:id="@+id/lakshdweepcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_lakshdweep"
+                            android:layout_marginLeft="10dp"
+                            android:text="Starts from ₹35,999"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/lakshdweepduration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@+id/lakshdweepcost"
+                            android:background="@drawable/shape_txtview"
+                            android:text="10N/11D"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Dark_Blue">#006db3</color>
+    <color name="Light_Blue">#039be5</color>
+    <color name="Secondary_Blue">#29b6f6</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#29b6f6</color>
+    <color name="Secondary_dark_blue">#0086c3</color>
+    <color name="Secondary_Light_blue">#73e8ff</color>
+    <color name="Navy_blue">#000080</color>
+    <color name="Medium_blue">#0000CD</color>
+    <color name="Royal_blue">#4169E1</color>
+    <color name="Transparent">#004169E1</color>
+    <color name="Steel_blue">#4682B4</color>
+    <color name="lightSteel_blue">#D4DBEA</color>
+    <color name="Sky_blue">#00BFFF</color>
+    <color name="Dodger_blue">#1E90FF</color>
+    <color name="Cadet_blue">#4682B4</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#EC1010</color>
+</resources>

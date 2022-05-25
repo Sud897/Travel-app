@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VaccinationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/covidRule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardBackgroundColor="@color/Secondary_dark_blue">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/covid_rule"/>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btnRule"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Here>>"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/shape_btn_logout"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_below="@id/covidRule">
+
+            <ImageView
+                android:id="@+id/imgVac"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:src="@drawable/document" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/favVac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_baseline_camera_alt_24"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_logout"
+            android:layout_gravity="center"
+            android:text="UPDATE"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+</ScrollView>
